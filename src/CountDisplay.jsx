@@ -1,9 +1,10 @@
 function CountDisplay({count}) {
   return (
     <>
-      <h2 className="card-title">
-        Current count is {count}
+      <h2 className="card-title fw-bolder">
+        {count}
       </h2>
+      <h3 className="fw-normal fst-italic">Current count</h3>
     </>
   )
 }
