@@ -18,7 +18,7 @@ function Counter({count, stateCount}) {
 
   return (
     <>
-      <section className="container text-center pt-5">
+      <section className="container text-center p-5">
         <div className="row gy-5 gx-5">
           <div className="col-md-2 col-lg-3">
              {/*Intentionally left blank */ }
