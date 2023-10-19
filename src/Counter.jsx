@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import CountDisplay from './CountDisplay';
 
 function Counter() {
 
@@ -25,9 +26,7 @@ function Counter() {
         <div className="card text-center">
           <div className="card-header">Counter Component</div>
           <div className="card-body">
-            <h2 className="card-title">
-              Current count is {count}
-            </h2>
+            <CountDisplay count={count} />
           </div>
           <div className="card-footer">
             <div className="d-flex justify-content-center gap-3">
