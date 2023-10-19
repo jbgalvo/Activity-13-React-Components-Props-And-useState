@@ -1,14 +1,10 @@
-import { useState } from 'react'
 import CountDisplay from './CountDisplay';
 
-function Counter() {
-
-  //Variables
-  const [count, setCount] = useState(0);
+function Counter({count, stateCount}) {
 
   //Increment Function
   const increment = () => {
-    setCount((count) => count + 1);
+    stateCount((count) => count + 1);
   }
 
   //decrement Function
@@ -16,7 +12,7 @@ function Counter() {
     if(count <= 0) {
       return;
     } else {
-      setCount((count) => count - 1);
+      stateCount((count) => count - 1);
     }
   }
 
