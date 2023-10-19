@@ -13,8 +13,9 @@ function App() {
   return (
     <>
       <main className="d-flex flex-column min-vh-100">
-        <Header title={title}></Header>
-        <Footer copyright={copyright}></Footer>
+        <Header title={title} />
+        <Counter />
+        <Footer copyright={copyright} />
       </main>
     </>
   )
