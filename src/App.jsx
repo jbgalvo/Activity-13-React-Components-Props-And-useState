@@ -1,39 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Counter from './Counter'
 import Footer from './Footer'
 import Header from './Header'
-import './App.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0)
+  const [title, setTitle] = useState("Activity 13 - React Components, Props, and useState");
+  const [copyright, setCopyright] = useState("Copyright 2023 © BASE 404 Bootcamp. All rights Reserved.");
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-          <Header />
-          <Counter />
-          <Footer />
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main className="d-flex flex-column min-vh-100">
+        <Header title={title}></Header>
+        <Footer copyright={copyright}></Footer>
+      </main>
     </>
   )
 }

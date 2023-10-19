@@ -1,7 +1,11 @@
-function Footer() {
+function Footer(props) {
   return (
     <>
-      <h1>Footer Component</h1>
+      <footer className="text-center text-lg-start bg-light text-muted mt-auto">
+        <div className="text-center p-4" style={{backgroundColor: "rgba(0, 0, 0, 0.05)", color: "#000"}}>
+          {props.copyright}
+        </div>
+      </footer>
     </>
   )
 }
