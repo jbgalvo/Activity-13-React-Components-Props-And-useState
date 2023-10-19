@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 ## Activity 13 - React Components, Props, and useState
 
-This activity was created using HTML, CSS, Bootstrap 5, Javascript, and React Js.
+This activity was created using HTML, CSS, Bootstrap 5, Javascript, Vite and React Js.
 
 ## BASE 404 - Activity 13
 
