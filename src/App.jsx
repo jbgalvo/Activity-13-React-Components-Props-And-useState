@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Counter from './Counter'
+import Footer from './Footer'
+import Header from './Header'
 import './App.css'
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
+          <Header />
+          <Counter />
+          <Footer />
         </p>
       </div>
       <p className="read-the-docs">
