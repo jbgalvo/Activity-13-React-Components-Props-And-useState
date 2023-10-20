@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types'; 
 import './header.css';
 
 function Header({title, count}) {
@@ -27,5 +28,11 @@ function Header({title, count}) {
     </>
   )
 }
+
+//Added props type validation
+Header.propTypes = { 
+  title: PropTypes.string.isRequired,
+  count: PropTypes.number.isRequired  
+}; 
 
 export default Header;

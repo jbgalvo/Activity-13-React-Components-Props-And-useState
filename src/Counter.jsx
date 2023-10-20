@@ -1,4 +1,5 @@
-import CountDisplay from './CountDisplay';
+import PropTypes from 'prop-types'; 
+import CountDisplay from './CountDisplay.jsx';
 
 function Counter({count, stateCount}) {
 
@@ -52,5 +53,11 @@ function Counter({count, stateCount}) {
     </>
   )
 }
+
+//Added props type validation
+Counter.propTypes = { 
+  count: PropTypes.number.isRequired,
+  stateCount: PropTypes.func.isRequired
+}; 
 
 export default Counter;

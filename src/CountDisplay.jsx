@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'; 
+
 function CountDisplay({count}) {
   return (
     <>
@@ -8,5 +10,10 @@ function CountDisplay({count}) {
     </>
   )
 }
+
+//Added props type validation
+CountDisplay.propTypes = { 
+  count: PropTypes.number.isRequired 
+}; 
 
 export default CountDisplay;
